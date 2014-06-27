@@ -472,7 +472,7 @@ int initialize_directories() {
             goto fail;
         }
 
-        if (selinux_android_restorecon(android_media_dir.path, 0)) {
+        if (selinux_android_restorecon(android_media_dir.path)) {
             goto fail;
         }
 
